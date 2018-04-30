@@ -4,6 +4,7 @@ function capitalizeFirstLetter (x) {
   return x.charAt(0).toUpperCase() + x.slice(1)
 }
 function getName () {
+  // TODO ADD COOKIE SUPPORTS
   const entry = window.location.search.replace(/[^\w\s]/gi, ' ').trim()
   let name = ''
   if (entry !== '') {

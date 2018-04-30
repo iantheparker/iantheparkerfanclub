@@ -6,14 +6,19 @@ import backImg from './back.svg'
 
 const NavBarStyles = styled.nav`
   width: 100%;
+  display: flex;
+  .left,
+  .right {
+    flex: 1;
+  }
   background: ${props => (props.playful ? colors.pink : colors.blue)};
 
   a {
     color: black;
-    padding: 1rem;
+    padding: 1rem 0 0 0;
     display: inline-block;
     img {
-      height: 7rem;
+      height: 4rem;
     }
   }
 `
@@ -21,10 +26,15 @@ class NavBar extends React.Component {
   render () {
     return (
       <NavBarStyles playful={this.props.playful}>
-        <Link to="/">
-          <img src={backImg} alt="" />
-        </Link>
-        {this.props.title}
+        <div className="left">
+          <Link to="/">
+            <img src={backImg} alt="" />
+          </Link>
+        </div>
+        <div className="center">
+          <h2>{this.props.title}</h2>
+        </div>
+        <div className="right" />
       </NavBarStyles>
     )
   }

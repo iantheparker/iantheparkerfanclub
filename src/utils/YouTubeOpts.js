@@ -4,11 +4,7 @@ import styled from 'styled-components'
 
 const YouTubeStyles = styled.div`
   .ytcontent {
-    -webkit-flex-basis: 60%;
-    -ms-flex-preferred-size: 60%;
-    flex-basis: 60%;
-    width: 100vw;
-    height: 100vh;
+    padding: 15rem 0;
     display: block;
     position: relative;
   }
@@ -26,16 +22,13 @@ const YouTubeStyles = styled.div`
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    span {
-      padding: 15rem 0 0;
-    }
   }
 
   .vid iframe {
     max-width: 90vw;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     .ytcontent {
       -webkit-flex-basis: 80%;
       -ms-flex-preferred-size: 80%;
