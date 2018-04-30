@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "engines": {
-    "yarn": "1.6.x",
-    "node": "10.x.x"
-  },
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
