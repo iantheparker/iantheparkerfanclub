@@ -18,19 +18,19 @@ export default {
     },
     {
       path: '/tc',
-      component: 'src/containers/TC',
+      component: 'src/containers/TC.js',
     },
     {
       path: '/tw',
-      component: 'src/containers/TW',
+      component: 'src/containers/TW.js',
     },
     {
       path: '/knewton',
-      component: 'src/containers/Knewton',
+      component: 'src/containers/Knewton.js',
     },
     {
       path: '/lisztomania',
-      component: 'src/containers/Lisztomania',
+      component: 'src/containers/Lisztomania.js',
     },
     {
       is404: true,

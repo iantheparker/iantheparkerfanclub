@@ -1,6 +1,0 @@
-[build]
-  command = "yarn build"
-  publish = "dist"
-
-  [context.production]
-    environment = { YARN_VERSION = "1.6.0", NODE_ENV = "10.0.0" } 

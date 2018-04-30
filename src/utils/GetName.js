@@ -6,7 +6,7 @@ function capitalizeFirstLetter (x) {
 function getName () {
   const entry = window.location.search.replace(/[^\w\s]/gi, ' ').trim()
   let name = ''
-  if (entry !== null || entry !== '') {
+  if (entry !== '') {
     name = entry
       .split(/\s+/)
       .map(capitalizeFirstLetter)
