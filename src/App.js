@@ -3,6 +3,7 @@ import { Router } from 'react-static'
 import styled from 'styled-components'
 import { hot } from 'react-hot-loader'
 import Routes from 'react-static-routes'
+import './App.css'
 
 const AppStyles = styled.div`
   a {

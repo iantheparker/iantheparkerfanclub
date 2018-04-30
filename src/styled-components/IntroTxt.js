@@ -31,7 +31,7 @@ const IntroTxt = styled.div`
     span.playful {
       background-color: ${colors.pink};
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1024px), (max-height: 600px) {
       width: 90%;
       font-size: 1.2rem;
       span.subtitle:nth-child(1) {

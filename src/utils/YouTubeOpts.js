@@ -48,18 +48,19 @@ const YouTubeStyles = styled.div`
 class YouTubeOpts extends React.Component {
   render () {
     const start = this.props.start
+    const autoplay = this.props.autoplay ? 1 : 0
     const opts = {
       height: '390',
       width: '640',
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
-        autoplay: 0,
+        autoplay,
         start,
       },
     }
 
     return (
-      <YouTubeStyles>
+      <YouTubeStyles style={{ backgroundColor: 'black' }}>
         <div className="ytcontent">
           <div className="vid">
             <YouTube videoId={this.props.id} opts={opts} />

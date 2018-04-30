@@ -65,12 +65,12 @@ export default withSiteData(() => (
     >
       <Bucket>
         <h2>
-          <HomeLink to="/tc">Thunderclap Amps</HomeLink>
+          <HomeLink to="/thunderclap">Thunderclap Amps</HomeLink>
         </h2>
       </Bucket>
       <Bucket playful>
         <h2>
-          <HomeLink playful="true" to="/tw">
+          <HomeLink playful="true" to="/tumbleweed">
             Tumbleweed
           </HomeLink>
         </h2>

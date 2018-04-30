@@ -17,12 +17,12 @@ export default {
       component: 'src/containers/About',
     },
     {
-      path: '/tc',
-      component: 'src/containers/TC',
+      path: '/thunderclap',
+      component: 'src/containers/Thunderclap',
     },
     {
-      path: '/tw',
-      component: 'src/containers/TW',
+      path: '/tumbleweed',
+      component: 'src/containers/Tumbleweed',
     },
     {
       path: '/knewton',
