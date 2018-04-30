@@ -21,9 +21,12 @@ class GetName extends React.Component {
     this.state = { name: 'World' }
   }
   updateName () {
-    this.setState({
-      name: getName(),
-    })
+    const name = getName()
+    if (name !== '') {
+      this.setState({
+        name,
+      })
+    }
   }
 
   componentDidMount () {

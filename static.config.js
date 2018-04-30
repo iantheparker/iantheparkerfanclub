@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
-const SITE_URL = ''
+const SITE_URL = 'https://agitated-borg-cc4be8.netlify.com/'
 
 export default {
   getSiteData: () => ({
@@ -18,19 +18,19 @@ export default {
     },
     {
       path: '/tc',
-      component: 'src/containers/TC.js',
+      component: 'src/containers/TC',
     },
     {
       path: '/tw',
-      component: 'src/containers/TW.js',
+      component: 'src/containers/TW',
     },
     {
       path: '/knewton',
-      component: 'src/containers/Knewton.js',
+      component: 'src/containers/Knewton',
     },
     {
       path: '/lisztomania',
-      component: 'src/containers/Lisztomania.js',
+      component: 'src/containers/Lisztomania',
     },
     {
       is404: true,
@@ -43,7 +43,7 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
-  // siteRoot: SITE_URL,
+  siteRoot: SITE_URL,
   Document: class CustomHtml extends Component {
     render () {
       const {
