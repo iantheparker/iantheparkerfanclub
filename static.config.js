@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
+const SITE_URL = 'https://headlesscms.org'
+
 export default {
   getSiteData: () => ({
     title: 'React Static',
@@ -37,6 +39,7 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
+  // siteRoot: SITE_URL,
   Document: class CustomHtml extends Component {
     render () {
       const {
