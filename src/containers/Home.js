@@ -1,0 +1,108 @@
+import React from 'react'
+import { withSiteData, Link } from 'react-static'
+import styled from 'styled-components'
+import IntroTxt from '../styled-components/IntroTxt'
+import colors from '../utils/colors'
+
+function capitalizeFirstLetter (string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+function getName () {
+  const entry = window.location.search.replace(/[^\w\s]/gi, ' ').trim()
+  let name = ''
+  if (entry === null || entry === '') {
+    name = 'World'
+  } else {
+    name = entry
+      .split(/\s+/)
+      .map(capitalizeFirstLetter)
+      .join(' ')
+  }
+
+  return name
+}
+const HomeLink = styled(Link)`
+  text-decoration: none;
+  &:hover {
+    &::before {
+      content: ${props => (props.playful ? '🎉' : '🔦')};
+      margin: 0 10px;
+    }
+    &::after {
+      content: ${props => (props.playful ? '🎉' : '🔦')};
+      margin: 0 10px;
+    }
+  }
+  &:visited {
+    color: black;
+  }
+`
+const Bucket = styled.div`
+  width: 50%;
+  height: 45vh;
+  overflow: hidden;
+  background-color: ${props => (props.playful ? colors.pink : colors.blue)};
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  h2 {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 3rem;
+    @media (max-width: 1024px) {
+      font-size: 1.2rem;
+    }
+  }
+`
+
+export default withSiteData(() => (
+  <div>
+    <IntroTxt big>
+      <p>
+        Hello {getName()}, <br />
+        Welcome to the Ian Parker Fan Club. Before you become a member, you should probably check
+        out some of my stuff. My stuff is split into two buckets:{' '}
+        <span className="problem-solving">user-centered problem-solving</span> and{' '}
+        <span className="playful">playful provocations</span>.
+      </p>
+    </IntroTxt>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
+      }}
+    >
+      <Bucket>
+        <h2>
+          <HomeLink to="/tc">Thunderclap Amps</HomeLink>
+        </h2>
+      </Bucket>
+      <Bucket playful>
+        <h2>
+          <HomeLink playful to="/tw">
+            Tumbleweed
+          </HomeLink>
+        </h2>
+      </Bucket>
+      <Bucket playful>
+        <h2>
+          <HomeLink playful to="/lisztomania">
+            Lisztomania
+          </HomeLink>
+        </h2>
+      </Bucket>
+      <Bucket>
+        <h2>
+          <HomeLink to="/knewton">Knewton GMAT</HomeLink>
+        </h2>
+      </Bucket>
+    </div>
+  </div>
+))
