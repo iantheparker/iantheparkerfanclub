@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
-const SITE_URL = 'https://agitated-borg-cc4be8.netlify.com/'
+const SITE_URL = 'https://iantheparkerfan.club'
 
 export default {
   getSiteData: () => ({
@@ -43,7 +43,7 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
-  siteRoot: SITE_URL,
+  // siteRoot: SITE_URL,
   Document: class CustomHtml extends Component {
     render () {
       const {
@@ -55,6 +55,7 @@ export default {
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
