@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
-const SITE_URL = 'https://headlesscms.org'
+const SITE_URL = ''
 
 export default {
   getSiteData: () => ({
@@ -11,6 +11,10 @@ export default {
     {
       path: '/',
       component: 'src/containers/Home',
+    },
+    {
+      path: '/about',
+      component: 'src/containers/About',
     },
     {
       path: '/tc',
