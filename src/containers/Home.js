@@ -3,24 +3,8 @@ import { withSiteData, Link } from 'react-static'
 import styled from 'styled-components'
 import IntroTxt from '../styled-components/IntroTxt'
 import colors from '../utils/colors'
+import GetName from '../utils/GetName'
 
-function capitalizeFirstLetter (string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
-}
-function getName () {
-  const entry = window.location.search.replace(/[^\w\s]/gi, ' ').trim()
-  let name = ''
-  if (entry === null || entry === '') {
-    name = 'World'
-  } else {
-    name = entry
-      .split(/\s+/)
-      .map(capitalizeFirstLetter)
-      .join(' ')
-  }
-
-  return name
-}
 const HomeLink = styled(Link)`
   text-decoration: none;
   &:hover {
@@ -64,7 +48,7 @@ export default withSiteData(() => (
   <div>
     <IntroTxt big>
       <p>
-        Hello , <br />
+        Hello <GetName />, <br />
         Welcome to the Ian Parker Fan Club. Before you become a member, you should probably check
         out some of my stuff. My stuff is split into two buckets:{' '}
         <span className="problem-solving">user-centered problem-solving</span> and{' '}
@@ -86,14 +70,14 @@ export default withSiteData(() => (
       </Bucket>
       <Bucket playful>
         <h2>
-          <HomeLink playful to="/tw">
+          <HomeLink playful="true" to="/tw">
             Tumbleweed
           </HomeLink>
         </h2>
       </Bucket>
       <Bucket playful>
         <h2>
-          <HomeLink playful to="/lisztomania">
+          <HomeLink playful="true" to="/lisztomania">
             Lisztomania
           </HomeLink>
         </h2>
