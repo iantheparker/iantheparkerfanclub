@@ -64,7 +64,7 @@ export default withSiteData(() => (
   <div>
     <IntroTxt big>
       <p>
-        Hello {getName()}, <br />
+        Hello , <br />
         Welcome to the Ian Parker Fan Club. Before you become a member, you should probably check
         out some of my stuff. My stuff is split into two buckets:{' '}
         <span className="problem-solving">user-centered problem-solving</span> and{' '}

@@ -55,7 +55,6 @@ const YouTubeStyles = styled.div`
 class YouTubeOpts extends React.Component {
   render () {
     const start = this.props.start
-    console.log(`start = ${start}`)
     const opts = {
       height: '390',
       width: '640',
