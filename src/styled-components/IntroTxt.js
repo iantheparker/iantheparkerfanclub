@@ -51,3 +51,23 @@ const IntroTxt = styled.div`
   }
 `
 export default IntroTxt
+
+const IntroTxtSmall = IntroTxt.extend`
+  height: 50vh;
+  p {
+    font-size: 1.2rem;
+  }
+`
+export { IntroTxtSmall }
+
+const TextBlock = styled.div`
+  padding: 10rem 0;
+  p {
+    padding: 0 10rem;
+
+    @media (max-width: 1024px) {
+      padding: 0 1.2rem;
+    }
+  }
+`
+export { TextBlock }

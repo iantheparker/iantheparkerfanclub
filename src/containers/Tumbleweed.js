@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../styled-components/NavBar'
 import IntroTxt from '../styled-components/IntroTxt'
-import YouTubeOpts from '../utils/YouTubeOpts'
+import YouTubeOpts from '../styled-components/YouTubeOpts'
 
 const ytids = {
   tw: 'YeUt2ji_PAE',

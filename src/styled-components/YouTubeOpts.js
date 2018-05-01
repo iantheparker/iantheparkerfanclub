@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const YouTubeStyles = styled.div`
   .ytcontent {
-    padding: 15rem 0;
+    /*padding: 15rem 0;*/
     display: block;
     position: relative;
   }
@@ -60,7 +60,7 @@ class YouTubeOpts extends React.Component {
     }
 
     return (
-      <YouTubeStyles style={{ backgroundColor: 'black' }}>
+      <YouTubeStyles>
         <div className="ytcontent">
           <div className="vid">
             <YouTube videoId={this.props.id} opts={opts} />
