@@ -7,18 +7,12 @@ import GetName from '../utils/GetName'
 
 const HomeLink = styled(Link)`
   text-decoration: none;
-  &:hover {
-    &::before {
-      content: ${props => (props.playful ? '🎉' : '🔦')};
-      margin: 0 10px;
-    }
-    &::after {
-      content: ${props => (props.playful ? '🎉' : '🔦')};
-      margin: 0 10px;
-    }
-  }
   &:visited {
     color: black;
+  }
+  transition: 0.3s ease;
+  &:hover {
+    box-shadow: inset 0 -0.175em ${colors.black}, inset 0 -0.2em ${colors.white};
   }
 `
 const Bucket = styled.div`
@@ -26,6 +20,9 @@ const Bucket = styled.div`
   height: 45vh;
   overflow: hidden;
   background-color: ${props => (props.playful ? colors.pink : colors.blue)};
+  &:hover {
+    /*box-shadow: 0px 0px 0px 0.4rem black inset;*/
+  }
   @media (max-width: 1024px) {
     width: 100%;
     padding: 2.5rem;

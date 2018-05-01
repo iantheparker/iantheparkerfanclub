@@ -10,8 +10,10 @@
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
+    "js-cookie": "^2.2.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-ga": "^2.5.0",
     "react-router": "^4.2.0",
     "react-static": "^5.8.1",
     "react-youtube": "^7.6.0",

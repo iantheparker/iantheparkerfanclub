@@ -39,6 +39,8 @@ export default () => (
         is what our shooting studio looked like.
       </p>
       <p>
+        <b>The Problem</b>
+        <br />
         The problem was that running these online classes was costly. Each live lecture had a
         teacher and two teaching assistant staff. On top of that, with our single studio, we could
         only run so many classes per day, limiting the number of students we could take on and any
@@ -51,6 +53,8 @@ export default () => (
     <LgImg src={links.effie} />
     <TextBlock>
       <p>
+        <b>Research</b>
+        <br />
         We got to work researching what aspects of our current live classes kept students engaged.
         We learned a few key things through student interviews: 1) seeing the teacher’s face
         alongside slides was super compelling, 2) students often reviewed slides later while
@@ -65,6 +69,11 @@ export default () => (
         their phone to try to catch up on lectures they missed. They would often try to skip through
         material to just get to the pieces they felt were essential, but scanning through the
         lectures and slides was difficult.
+      </p>
+      <p>
+        <b>How we solved it</b>
+        <br />I corraled a small team consisting of a designer, a developer, a data scientist, a
+        teacher, and a content developer and we started sketching out some ideas.{' '}
       </p>
     </TextBlock>
     <LgImg src={links.sketch} />

@@ -1,4 +1,5 @@
 import React from 'react'
+import Cookie from 'js-cookie'
 
 function capitalizeFirstLetter (x) {
   return x.charAt(0).toUpperCase() + x.slice(1)
@@ -6,12 +7,13 @@ function capitalizeFirstLetter (x) {
 function getName () {
   // TODO ADD COOKIE SUPPORTS
   const entry = window.location.search.replace(/[^\w\s]/gi, ' ').trim()
-  let name = ''
+  let name = Cookie.get('greetings') || ''
   if (entry !== '') {
     name = entry
       .split(/\s+/)
       .map(capitalizeFirstLetter)
       .join(' ')
+    Cookie.set('greetings', name)
   }
   return name
 }

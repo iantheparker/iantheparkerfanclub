@@ -6,9 +6,7 @@ import YouTubeOpts from '../styled-components/YouTubeOpts'
 
 const links = {
   tc_intro: 'n20fcGjeAKM',
-  adobevid: 'https://www.dropbox.com/s/4w2emz0f813et4i/geordie2-1.mov?raw=1',
-  effie: 'https://www.dropbox.com/s/mc791kjfp45t7fy/effieTA.jpg?raw=1',
-  sketch: 'https://www.dropbox.com/s/f6umt4o7f58kvrd/internally-created.jpeg?raw=1',
+  sketch: 'https://www.dropbox.com/s/6d1ywoeqoidsonq/internally-created.jpg?raw=1',
   proof: 'https://www.dropbox.com/s/q7x3y6zpzp950dq/proof.jpg?raw=1',
   artifactused: 'https://www.dropbox.com/s/c6wnrfm2u5f4sto/artifactused.png?raw=1',
   des: 'https://blog.intercom.com/using-job-stories-design-features-ui-ux/',
@@ -43,8 +41,7 @@ export default () => (
         <b>The Problem</b>
         <br />
         For every positive email we got about the success of a user’s campaign, we got a confused or
-        angry response questioning whether or not their blast went out at all. Even when users knew
-        the blast went out, they couldn’t figure out if the campaign “worked”.
+        angry response questioning whether or not their blast went out at all, like the ones below:
       </p>
     </TextBlock>
     <IntroTxt style={{ maxHeight: '1vh' }}>
@@ -55,11 +52,19 @@ export default () => (
     </IntroTxt>
     <TextBlock>
       <p>
-        Doing some research, we learned that many of our campaign organizers, particularly those who
-        used paid campaigns, were being held accountable by their organizations to ensure the money
-        they spent was worth it. Brands as well as NGOs were becoming increasingly metric- oriented
-        and campaign organizers needed to show quantitative results. We broke this problem down into
-        three key components:
+        This was a trivial problem to solve. We created a confirmation email. When speaking to
+        users, however, we discovered a related and more fundemental problem: campaign organizers
+        had no idea how successful their campaign was. We may as well have been selling snake oil.
+      </p>
+      <p>
+        Doing some research to better understand this problem, we learned that many of our campaign
+        organizers, particularly those who used paid campaigns, were being held accountable by their
+        organizations to ensure the money they spent was worth it. Brands as well as NGOs were
+        becoming increasingly metric- oriented and campaign organizers needed to show quantitative
+        results.
+      </p>
+      <p>
+        We broke this problem down into three key components:
         <ul>
           <li>How can we measure the success of our campaigns? </li>
           <li>How can we effectively communicate success to campaign organizers?</li>
@@ -74,13 +79,15 @@ export default () => (
       <p>
         <b>How We Solved It</b>
         <br />
-        First we had to re-evaluate what success means. Was success just about the size of a
+        First we had to re-evaluate what success meant. Was success just about the size of a
         campaign? With raw numbers, larger brands would always appear to be more successful, but
         there were plenty of upstarts that had viral campaigns that were massive, relative to their
-        size. We had to figure out a way to score success relatively. Another challenge we faced was
-        figuring out the true scale of a campaign. Up until then we had focused on the number of
-        backers who lended their social media accounts to the campaign, but what about retweets and
-        shares and all the other ripple effects a campaign could have?
+        size. We had to figure out a way to score success relatively.{' '}
+      </p>
+      <p>
+        Another challenge we faced was figuring out the true scale of a campaign. Up until then we
+        had focused on the number of backers who lended their social media accounts to the campaign,
+        but what about retweets and shares and all the other ripple effects a campaign could have?
       </p>
       <p>
         In response to these questions we came up with something we called the “Amp Score” (short

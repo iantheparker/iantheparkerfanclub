@@ -61,7 +61,7 @@ const IntroTxtSmall = IntroTxt.extend`
 export { IntroTxtSmall }
 
 const TextBlock = styled.div`
-  padding: 10rem 0;
+  padding: 8rem 0;
   p {
     padding: 0 10rem;
 

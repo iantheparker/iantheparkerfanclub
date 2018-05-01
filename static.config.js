@@ -55,7 +55,11 @@ export default {
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+            <link
+              type="image/x-icon"
+              rel="shortcut icon"
+              href="https://raw.githubusercontent.com/edkf/edkf/master/public/favicon.ico"
+            />
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>
