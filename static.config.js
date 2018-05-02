@@ -26,7 +26,7 @@ export default {
     },
     {
       path: '/knewton',
-      component: 'src/containers/Knewton',
+      component: 'src/containers/knewton',
     },
     {
       path: '/lisztomania',
@@ -43,7 +43,7 @@ export default {
     meta.styleTags = sheet.getStyleElement()
     return html
   },
-  // siteRoot: SITE_URL,
+  siteRoot: SITE_URL,
   Document: class CustomHtml extends Component {
     render () {
       const {
@@ -58,8 +58,20 @@ export default {
             <link
               type="image/x-icon"
               rel="shortcut icon"
-              href="https://raw.githubusercontent.com/edkf/edkf/master/public/favicon.ico"
+              href="https://www.dropbox.com/s/5omj5x9orknarte/favicon.ico?raw=1"
             />
+            <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
+
+            <meta
+              name="twitter:card"
+              value="IanTheParker Fan Club: wouldn't he make a great dictator!?"
+            />
+
+            <meta property="og:title" content="IanTheParker Fan Club " />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content={SITE_URL} />
+            <meta property="og:description" content="a place for lovers." />
+
             {renderMeta.styleTags}
           </Head>
           <Body>{children}</Body>

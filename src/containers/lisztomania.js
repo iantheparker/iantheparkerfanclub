@@ -78,7 +78,7 @@ export default () => (
     <YouTubeOpts id={ytids.lessig} start={293} />
     <IntroTxt>
       <p>
-        Then, the cherry on top: Professor Larry Lessig, the father of Creative Commons and chamion
+        Then, the cherry on top: Professor Larry Lessig, the father of Creative Commons and champion
         of remix culture, highlighted us in a TED talk called “Re-examining the remix”. Thanks
         Lessig. I feel internet famous now.
       </p>
