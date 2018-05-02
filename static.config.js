@@ -18,11 +18,11 @@ export default {
     },
     {
       path: '/thunderclap',
-      component: 'src/containers/Thunderclap',
+      component: 'src/containers/thunderclap',
     },
     {
       path: '/tumbleweed',
-      component: 'src/containers/Tumbleweed',
+      component: 'src/containers/tumbleweed',
     },
     {
       path: '/knewton',
@@ -30,7 +30,7 @@ export default {
     },
     {
       path: '/lisztomania',
-      component: 'src/containers/Lisztomania',
+      component: 'src/containers/lisztomania',
     },
     {
       is404: true,
