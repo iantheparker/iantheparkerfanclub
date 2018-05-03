@@ -4,42 +4,54 @@ import styled from 'styled-components'
 import IntroTxt from '../styled-components/IntroTxt'
 import colors from '../utils/colors'
 import GetName from '../utils/GetName'
+import { device } from '../utils/device'
 
 const HomeLink = styled(Link)`
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
   text-decoration: none;
   &:visited {
     color: black;
   }
   transition: 0.3s ease;
-  &:hover {
-    box-shadow: inset 0 -0.175em ${colors.black}, inset 0 -0.2em ${colors.white};
+  @media ${device.laptop} {
+    width: 50%;
   }
-`
-const Bucket = styled.div`
-  width: 50%;
-  height: 45vh;
-  overflow: hidden;
-  background-color: ${props => (props.playful ? colors.pink : colors.blue)};
-  &:hover {
-    /*box-shadow: 0px 0px 0px 0.4rem black inset;*/
-  }
-  @media (max-width: 1024px) {
+  div {
     width: 100%;
-    padding: 2.5rem;
-  }
-  h2 {
-    text-align: center;
-    position: relative;
-    top: 45%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 3rem;
-    @media (max-width: 1024px) {
-      font-size: 1.2rem;
+    height: 100%;
+    background-color: ${props => (props.playful ? colors.pink : colors.blue)};
+    &:hover {
+      box-shadow: 0px 0px 0px 0.4rem black inset;
+    }
+    p {
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 2.5rem;
+      @media ${device.laptop} {
+        font-size: 1.5rem;
+        padding: 3rem;
+      }
     }
   }
 `
+
+function Bucket (props) {
+  return (
+    <HomeLink to={props.to} playful={props.playful}>
+      <div>
+        <p>{props.title}</p>
+      </div>
+    </HomeLink>
+  )
+}
 
 export default withSiteData(() => (
   <div>
@@ -60,30 +72,10 @@ export default withSiteData(() => (
         justifyContent: 'space-between',
       }}
     >
-      <Bucket>
-        <h2>
-          <HomeLink to="/thunderclap">Thunderclap Amps</HomeLink>
-        </h2>
-      </Bucket>
-      <Bucket playful>
-        <h2>
-          <HomeLink playful="true" to="/tumbleweed">
-            Tumbleweed
-          </HomeLink>
-        </h2>
-      </Bucket>
-      <Bucket playful>
-        <h2>
-          <HomeLink playful="true" to="/lisztomania">
-            Lisztomania
-          </HomeLink>
-        </h2>
-      </Bucket>
-      <Bucket>
-        <h2>
-          <HomeLink to="/knewton">Knewton GMAT</HomeLink>
-        </h2>
-      </Bucket>
+      <Bucket to="/thunderclap" title="Thunderclap Amps" />
+      <Bucket playful="true" to="/tumbleweed" title="Tumbleweed" />
+      <Bucket playful="true" to="/lisztomania" title="Lisztomania" />
+      <Bucket to="/knewton" title="Knewton GMAT" />
     </div>
   </div>
 ))

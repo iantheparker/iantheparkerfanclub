@@ -6,6 +6,7 @@ const VideoWrapperStyle = styled.div`
   height: 50vh;
   display: block;
   position: relative;
+  overflow: hidden;
   left: 50%;
   transform: translate(-50%);
   video {
@@ -48,10 +49,6 @@ const VideoWrapperStyle = styled.div`
     text-transform: uppercase;
     font-weight: 700;
     line-height: 7.1rem;
-  }
-  @media (max-width: 1024px) {
-    overflow: hidden;
-    height: 50vh;
   }
   .hide {
     opacity: 0;

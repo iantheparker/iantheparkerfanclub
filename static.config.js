@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
 const SITE_URL = 'https://iantheparkerfan.club'
+const db_favicon = 'https://www.dropbox.com/s/5omj5x9orknarte/favicon.ico?raw=1'
 
 export default {
   getSiteData: () => ({
@@ -18,19 +19,19 @@ export default {
     },
     {
       path: '/thunderclap',
-      component: 'src/containers/thunderclap',
+      component: 'src/containers/Thunderclap',
     },
     {
       path: '/tumbleweed',
-      component: 'src/containers/tumbleweed',
+      component: 'src/containers/Tumbleweed',
     },
     {
       path: '/knewton',
-      component: 'src/containers/knewton',
+      component: 'src/containers/Knewton',
     },
     {
       path: '/lisztomania',
-      component: 'src/containers/lisztomania',
+      component: 'src/containers/Lisztomania',
     },
     {
       is404: true,
@@ -55,11 +56,7 @@ export default {
           <Head>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link
-              type="image/x-icon"
-              rel="shortcut icon"
-              href="https://www.dropbox.com/s/5omj5x9orknarte/favicon.ico?raw=1"
-            />
+            <link type="image/x-icon" rel="shortcut icon" href={db_favicon} />
             <meta content="IE=edge,chrome=1" httpEquiv="X-UA-Compatible" />
 
             <meta
