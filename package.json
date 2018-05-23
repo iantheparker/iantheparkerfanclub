@@ -10,6 +10,10 @@
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-regular": "^5.0.13",
+    "@fortawesome/react-fontawesome": "^0.0.19",
     "js-cookie": "^2.2.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

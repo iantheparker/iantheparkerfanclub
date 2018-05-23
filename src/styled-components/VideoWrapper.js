@@ -2,15 +2,26 @@ import React from 'react'
 import styled from 'styled-components'
 
 const VideoWrapperStyle = styled.div`
-  width: 69vw;
-  height: 50vh;
+  width: 100vw;
+  /*height: 50vh;*/
   display: block;
   position: relative;
   overflow: hidden;
   left: 50%;
   transform: translate(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   video {
-    width: 100%;
+    max-width: 69vw;
     height: 100%;
     cursor: pointer;
   }
@@ -64,7 +75,7 @@ class VideoWrapper extends React.Component {
     // create a ref to store the textInput DOM element
     this.vid = React.createRef()
     this.playButton = React.createRef()
-    this.playing = false
+    this.playing = !this.props.autoPlay
   }
   togglePlay () {
     if (this.playing) {
@@ -78,11 +89,23 @@ class VideoWrapper extends React.Component {
     }
     this.playing = !this.playing
   }
+  componentDidMount () {
+    if (this.props.autoPlay) {
+      this.togglePlay()
+      this.playButton.current.remove()
+    }
+  }
 
   render () {
     return (
       <VideoWrapperStyle>
-        <video poster={this.props.poster} ref={this.vid}>
+        <video
+          poster={this.props.poster}
+          ref={this.vid}
+          autoPlay={this.props.autoplay}
+          loop={this.props.loop}
+          muted={this.props.muted}
+        >
           <source src={this.props.src} type="video/mp4" /> Your browser does not support the video
           tag.
         </video>

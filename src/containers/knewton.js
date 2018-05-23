@@ -20,23 +20,32 @@ export default () => (
     <NavBar title="Knewton GMAT: VOD" />
     <IntroTxt>
       <p>
-        Knewton is an adaptive learning education technology company. In the early days, Knewton was
-        focused on the test-prep market and we were using Adobe Connect to conduct live, online
-        classes. Adobe Connect had some great features such as the ability to stream both slides and
-        a video of the teacher side by side.
+        At Knewton, we wanted to explore how we could reach more students and also expand our user
+        base to less affluent students. In early 2010, I was tasked with delivering an on-demand
+        version of our GMAT product that would continue to engage students at a deep level...titled
+        Knewton GMAT: Video On-Demand.
         <br />
         <span className="subtitle">Key Stakeholder + Team Lead</span>
         <span className="subtitle">Research</span>
+        <span className="subtitle">Prototyping</span>
         <span className="subtitle">Content Production</span>
+        <br />
+        <span className="subtitle2">JS</span>
+        <span className="subtitle2">JWPlayer</span>
       </p>
     </IntroTxt>
     <VideoWrapper src={links.adobevid} poster={links.adobe} />
     <TextBlock>
       <p>
+        Knewton is an adaptive learning education technology company. In the early days, Knewton was
+        focused on the test-prep market and we were using Adobe Connect to conduct live, online
+        classes. Adobe Connect had some great features such as the ability to stream both slides and
+        a video of the teacher side by side.
+      </p>
+      <p>
         It also had a chatroom where students could ask questions during the lecture and teaching
         assistants could respond without interrupting the lecture for other students. Knewton
-        students found these live classes incredibly engaging and we were getting rave reviews. This
-        is what our shooting studio looked like.
+        students found these live classes incredibly engaging and we were getting rave reviews.
       </p>
       <p>
         <b>The Problem</b>
@@ -50,7 +59,7 @@ export default () => (
         engage students at a deep level...titled Knewton GMAT: Video On-Demand.
       </p>
     </TextBlock>
-    <LgImg src={links.effie} />
+    <LgImg src={links.effie} caption="This is what our studio looked like." />
     <TextBlock>
       <p>
         <b>Research</b>

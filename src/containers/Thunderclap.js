@@ -3,6 +3,7 @@ import NavBar from '../styled-components/NavBar'
 import IntroTxt, { TextBlock } from '../styled-components/IntroTxt'
 import LgImg from '../styled-components/LgImg'
 import YouTubeOpts from '../styled-components/YouTubeOpts'
+import VideoWrapper from '../styled-components/VideoWrapper'
 
 const links = {
   tc_intro: 'n20fcGjeAKM',
@@ -11,10 +12,13 @@ const links = {
   artifactused: 'https://www.dropbox.com/s/c6wnrfm2u5f4sto/artifactused.png?raw=1',
   des: 'https://blog.intercom.com/using-job-stories-design-features-ui-ux/',
   map: 'https://www.dropbox.com/s/a4e2ne1h4ftzj17/map.jpg?raw=1',
+  mapvid: 'https://www.dropbox.com/s/t60ym3ii8659pe9/map.mp4?raw=1',
   backers: 'https://www.dropbox.com/s/5qc2fi3dvhhju8k/backers_blurred.jpg?raw=1',
   timeline: 'https://www.dropbox.com/s/xn9ndzpljote7h5/timeline.jpg?raw=1',
+  timelinevid: 'https://www.dropbox.com/s/8zgnx7kunf4gqto/timeline.mp4?raw=1',
   traffic: 'https://www.dropbox.com/s/k057tvlhay8ye24/traffic.jpg?raw=1',
   engagement: 'https://www.dropbox.com/s/jakesalk95oc6e4/engagementreport.jpg?raw=1',
+  sentiment: 'https://github.com/7compass/sentimental',
 }
 
 export default () => (
@@ -22,21 +26,29 @@ export default () => (
     <NavBar title="Thunderclap Amps" />
     <IntroTxt>
       <p>
-        Thunderclap allows anyone to create a campaign that blasts social media messages from many
-        users accounts all at once. We call each blast a “Thunderclap campaign”. Each Thunderclap
-        campaign is designed to rally people to the campaign organizer’s target landing page at a
-        crucial time. Every week, hundreds of new campaigns are created and hundreds of thousands of
-        social media messages are sent to their supporters through Thunderclap.
+        Thunderclap's users were too often confused about its effectiveness. After some sleuthing, I
+        kickstarted a few projects to address the confusion: new KPIs, shareable data viz graphics,
+        and a brand new analytics dashboard.
         <br />
         <span className="subtitle">Instigator</span>
         <span className="subtitle">Research + Prototyping</span>
-        <span className="subtitle">F/E Development</span>
-        <span className="subtitle">B/E Development</span>
-        <span className="subtitle">Data Eng</span>
+        <span className="subtitle">Backend Development</span>
+        <span className="subtitle">Frontend Development</span>
+        <br />
+        <span className="subtitle2">Rails</span>
+        <span className="subtitle2">Postgres</span>
+        <span className="subtitle2">Chartjs + d3</span>
       </p>
     </IntroTxt>
     <YouTubeOpts id={links.tc_intro} />
     <TextBlock>
+      <p>
+        Thunderclap allows anyone to create a campaign that blasts social media messages from many
+        users' accounts all at once. We call each blast a “Thunderclap campaign”. Each Thunderclap
+        campaign is designed to rally people to the campaign organizer’s target landing page at a
+        crucial time. Every week, hundreds of new campaigns are created and hundreds of thousands of
+        social media messages are sent to their supporters through Thunderclap.
+      </p>
       <p>
         <b>The Problem</b>
         <br />
@@ -119,39 +131,42 @@ export default () => (
     <LgImg src={links.artifactused} />
     <TextBlock>
       <p>
-        For users who needed more robust metrics, we revamped our campaign stats page to give
-        campaign organizers more insight into how their campaign played out.
+        For users who needed more robust metrics, I revamped our campaign stats page to give
+        campaign organizers more insight into how their campaign played out. I used Chartjs and d3
+        for the front, made some new Postgres tables with fancy queries to better handle all this
+        new data, and sat it all on Rails with some clever async loading work.
       </p>
-      <p>We added a map that captured new insights on where the campaign was most popular.</p>
+      <p>I added a map that captured new insights on where the campaign was most popular.</p>
     </TextBlock>
-    <LgImg src={links.map} />
+    <VideoWrapper src={links.mapvid} poster={links.map} autoPlay loop muted />
     <TextBlock>
       <p>
-        We udated the table full of supporters to be sortable across several several attributes:
+        I updated the table full of supporters to be sortable across several several attributes:
       </p>
     </TextBlock>
     <LgImg src={links.backers} />
     <TextBlock>
       <p>
-        We created an interactive stacked chart showing cumulative campaign growth, per social
+        I created an interactive stacked chart showing cumulative campaign growth, per social
         network, with the option to view in terms of total supporters, their social reach, or the
         amount of times they’ve shared their support to their timeline.
       </p>
     </TextBlock>
-    <LgImg src={links.timeline} />
+    <VideoWrapper src={links.timelinevid} poster={links.timeline} autoPlay loop muted />
     <TextBlock>
       <p>
-        We created another interactive chart showing where most of their supporter traffic was
-        coming from, and breaking down their views/conversion rate.
+        I created another interactive chart showing where most of their supporter traffic was coming
+        from, and breaking down their views/conversion rate.
       </p>
     </TextBlock>
     <LgImg src={links.traffic} />
     <TextBlock>
       <p>
-        We added another section called Engagement Report that lists engagement on the messages that
+        I added another section called Engagement Report that lists engagement on the messages that
         went out per network. It also now counts the second-wave ripple effect of engagement on your
         supporter’s messages and an analysis of the conversations happening around your hashtag,
-        breaking down sentiment, related hashtags, and gender of your audience.
+        breaking down sentiment, related hashtags, and gender of your audience. Props to this ruby
+        gem, <a href={links.sentiment}>sentimental</a>.
       </p>
     </TextBlock>
     <LgImg src={links.engagement} />

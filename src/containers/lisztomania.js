@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../styled-components/NavBar'
-import IntroTxt from '../styled-components/IntroTxt'
+import IntroTxt, { TextBlock } from '../styled-components/IntroTxt'
 import YouTubeOpts from '../styled-components/YouTubeOpts'
 
 const ytids = {
@@ -37,27 +37,33 @@ export default () => (
       <p>
         I’ve always loved remix culture and in early 2009 it was having a moment. The Internet was
         appropriating and mashing up every piece of pop culture they could find in the hopes that
-        something interesting would come of it. I came across this on YouTube, which cut 1980’s Brat
-        pack movie scenes to Phoenix’s catchy new song, Lisztomania.
+        something interesting would come of it. I made something that kinda blew up and became a
+        meme.
         <br />
         <span className="subtitle">Concept</span>
         <span className="subtitle">Director</span>
         <span className="subtitle">Editor</span>
       </p>
     </IntroTxt>
+    <TextBlock>
+      <p>
+        I saw this on YouTube, which cut 1980’s Brat pack movie scenes to Phoenix’s catchy new song,
+        Lisztomania.
+      </p>
+    </TextBlock>
     <YouTubeOpts id={ytids.original} />
-    <IntroTxt>
+    <TextBlock>
       <p>
         I was mesmerized. It was totally trivial, yet a surpisingly touching tribute to the 80s. I
-        couldn’t get it out of my head and I must’ve watched it 50 times within the first two days.
-        By the third day I was convinced I needed to make a tribute video to this tribute video to
-        keep this meta-joke going. On the fourth day, I grabbed some friends, gave them a case of
-        wine, put them on a Brooklyn rooftop during an epic sunset, and pressed record. I edited it
-        all down and put it online the next day, and titled it the Brooklyn Bratpack Mashup.
+        couldn’t get it out of my head and I must have watched it 50 times within the first two
+        days. By the third day I was convinced I needed to make a tribute video to this tribute
+        video to keep this meta-joke going. On the fourth day, I grabbed some friends, gave them a
+        case of wine, put them on a Brooklyn rooftop during an epic sunset, and pressed record. I
+        edited it all down, put it online the next day, and titled it the Brooklyn Bratpack Mashup.
       </p>
-    </IntroTxt>
+    </TextBlock>
     <YouTubeOpts id={ytids.brooklyn} />
-    <IntroTxt>
+    <TextBlock>
       <p>
         Shortly after posting it we started getting video replies on YouTube. The first one said{' '}
         <a href={ytlinks.manila}>Manila, Philippines Brat Pack Mashup</a>. It was a group of high
@@ -74,14 +80,14 @@ export default () => (
         <a href={ytlinks.ukraine}>Ukraine</a> and <a href={ytlinks.playlist}>and many more</a>. To
         this day, there are new remixes appearing.
       </p>
-    </IntroTxt>
+    </TextBlock>
     <YouTubeOpts id={ytids.lessig} start={293} />
-    <IntroTxt>
+    <TextBlock>
       <p>
         Then, the cherry on top: Professor Larry Lessig, the father of Creative Commons and champion
         of remix culture, highlighted us in a TED talk called “Re-examining the remix”. Thanks
         Lessig. I feel internet famous now.
       </p>
-    </IntroTxt>
+    </TextBlock>
   </div>
 )

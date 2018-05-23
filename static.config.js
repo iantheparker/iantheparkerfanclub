@@ -14,10 +14,6 @@ export default {
       component: 'src/containers/Home',
     },
     {
-      path: '/about',
-      component: 'src/containers/About',
-    },
-    {
       path: '/thunderclap',
       component: 'src/containers/Thunderclap',
     },
@@ -32,6 +28,14 @@ export default {
     {
       path: '/lisztomania',
       component: 'src/containers/Lisztomania',
+    },
+    {
+      path: '/whack-a-kanji',
+      component: 'src/containers/Whack-a-kanji',
+    },
+    {
+      path: '/crescendo',
+      component: 'src/containers/Crescendo',
     },
     {
       is404: true,
@@ -54,6 +58,7 @@ export default {
       return (
         <Html>
           <Head>
+            <title>IanTheParker Fan Club</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link type="image/x-icon" rel="shortcut icon" href={db_favicon} />
@@ -63,8 +68,8 @@ export default {
               name="twitter:card"
               value="IanTheParker Fan Club: wouldn't he make a great dictator!?"
             />
-
-            <meta property="og:title" content="IanTheParker Fan Club " />
+            <meta property="og:site_name" content="IanTheParker Fan Club" />
+            <meta property="og:title" content="IanTheParker Fan Club" />
             <meta property="og:type" content="website" />
             <meta property="og:url" content={SITE_URL} />
             <meta property="og:description" content="a place for lovers." />

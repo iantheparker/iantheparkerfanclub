@@ -32,20 +32,35 @@ const IntroTxt = styled.div`
     span.playful {
       background-color: ${colors.pink};
     }
-    @media ${device.laptop} and (min-height: 600px) {
-      width: 60rem;
-      font-size: ${props => (props.big ? '3rem' : '2rem')};
-
-      span.subtitle:nth-child(1) {
-        margin: 2rem 1rem 0 0;
-      }
-    }
-    span.subtitle {
+    .subtitle,
+    .subtitle2 {
       display: inline-block;
       opacity: 0.35;
       margin: 0 1rem 0 0;
       font-size: 1rem;
-      @media ${device.laptop} {
+      text-decoration: none;
+    }
+    .subtitle2 {
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    a.subtitle,
+    a.subtitle2 {
+      &:hover {
+        transition: 0.7s ease;
+        opacity: 1;
+      }
+    }
+    @media ${device.laptop} and (min-height: 600px) {
+      width: 60rem;
+      font-size: ${props => (props.big ? '3rem' : '2rem')};
+
+      .subtitle:nth-child(1) {
+        margin: 2rem 1rem 0 0;
+      }
+    }
+    @media ${device.laptop} {
+      .subtitle {
         margin: 2rem 1rem 0 0;
         font-size: 1.2rem;
       }
@@ -66,6 +81,9 @@ const TextBlock = styled.div`
   padding: 8rem 0;
   p {
     padding: 0 1.2rem;
+    b {
+      font-size: 2rem;
+    }
 
     @media ${device.mobileL} {
       padding: 0 5.2rem;

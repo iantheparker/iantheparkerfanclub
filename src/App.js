@@ -22,6 +22,9 @@ class App extends React.Component {
     })
     ReactGA.pageview(window.location.pathname + window.location.search)
   }
+  componentDidUpdate () {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }
   render () {
     return (
       <Router>
