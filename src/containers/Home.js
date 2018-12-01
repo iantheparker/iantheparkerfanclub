@@ -3,7 +3,7 @@ import { withSiteData, Link } from 'react-static'
 import styled from 'styled-components'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faGithub, faTumblr, faTwitter } from '@fortawesome/fontawesome-free-brands'
-import { faEnvelope, faListAlt } from '@fortawesome/fontawesome-free-regular'
+import { faEnvelope } from '@fortawesome/fontawesome-free-regular'
 
 import IntroTxt from '../styled-components/IntroTxt'
 import colors from '../utils/colors'
@@ -92,12 +92,6 @@ export default withSiteData(() => (
         </a>
         <a className="subtitle" href="https://twitter.com/iantheparker">
           <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a
-          className="subtitle"
-          href="https://www.dropbox.com/s/pc6kxi1l9r3ul9z/IanParkerCodes_2018.pdf?dl=0"
-        >
-          <FontAwesomeIcon icon={faListAlt} />
         </a>
         <a
           className="subtitle"

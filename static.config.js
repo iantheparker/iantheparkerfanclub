@@ -6,7 +6,7 @@ const db_favicon = 'https://www.dropbox.com/s/5omj5x9orknarte/favicon.ico?raw=1'
 
 export default {
   getSiteData: () => ({
-    title: 'React Static',
+    title: 'IanTheParker Fan Club',
   }),
   getRoutes: async () => [
     {

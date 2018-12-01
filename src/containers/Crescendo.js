@@ -86,7 +86,7 @@ export default () => (
         The third feature was more of a theme - we wanted to create the richest, most FOMO-inducing
         notifications possible. That meant riding the bleeding edge of what push could do, such as
         using gifs and updating info dynamically. It also meant creating context-specific push
-        notifications for different types of audience interactions and different end goals. We built
+        notifications for different types of audience interactions and different end goals. I built
         out several “types” of notifications to accomplish this:
         <ul>
           <li>
