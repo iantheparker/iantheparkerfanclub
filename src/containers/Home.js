@@ -1,14 +1,18 @@
-import React from 'react'
-import { withSiteData, Link } from 'react-static'
-import styled from 'styled-components'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faGithub, faTumblr, faTwitter } from '@fortawesome/fontawesome-free-brands'
-import { faEnvelope } from '@fortawesome/fontawesome-free-regular'
+import React from "react";
+import { withSiteData, Link } from "react-static";
+import styled from "styled-components";
+import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faTumblr,
+  faTwitter
+} from "@fortawesome/fontawesome-free-brands";
+import { faEnvelope } from "@fortawesome/fontawesome-free-regular";
 
-import IntroTxt from '../styled-components/IntroTxt'
-import colors from '../utils/colors'
-import GetName from '../utils/GetName'
-import { device } from '../utils/device'
+import IntroTxt from "../styled-components/IntroTxt";
+import colors from "../utils/colors";
+import GetName from "../utils/GetName";
+import { device } from "../utils/device";
 
 const HomeLink = styled(Link)`
   width: 100%;
@@ -59,9 +63,9 @@ const HomeLink = styled(Link)`
       }
     }
   }
-`
+`;
 
-function Bucket (props) {
+function Bucket(props) {
   return (
     <HomeLink to={props.to} playful={props.playful}>
       <div>
@@ -71,7 +75,7 @@ function Bucket (props) {
         </p>
       </div>
     </HomeLink>
-  )
+  );
 }
 
 export default withSiteData(() => (
@@ -79,10 +83,13 @@ export default withSiteData(() => (
     <IntroTxt big>
       <p>
         Hello <GetName />, <br />
-        Welcome to the Ian Parker Fan Club. Before you become a member, you should probably check
-        out some of my stuff. My stuff is split into two buckets:{' '}
-        <span className="problem-solving">user-centered problem-solving</span> and{' '}
-        <span className="playful">playful provocations</span>.
+        Welcome to the Ian Parker Fan Club. Before you become a member, you
+        should probably check out some of my stuff. My stuff is split into two
+        buckets:{" "}
+        <span className="problem-solving">
+          user-centered problem-solving
+        </span>{" "}
+        and <span className="playful">playful provocations</span>.
         <br />
         <a className="subtitle" href="https://iantheparker.tumblr.com">
           <FontAwesomeIcon icon={faTumblr} />
@@ -103,18 +110,39 @@ export default withSiteData(() => (
     </IntroTxt>
     <div
       style={{
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'space-between',
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "space-between"
       }}
     >
-      <Bucket playful="true" to="/whack-a-kanji" title="Whack-a-Kanji" date="May, 2018" />
+      <Bucket playful="true" to="/citec" title="CitEc" date="Winter, 2018" />
+      <Bucket to="/frame" title="Frame.ai" date="Fall, 2018" />
+      <Bucket
+        playful="true"
+        to="/whack-a-kanji"
+        title="Whack-a-Kanji"
+        date="May, 2018"
+      />
       <Bucket to="/thunderclap" title="Thunderclap Amps" date="Spring, 2017" />
-      <Bucket to="/crescendo" title="Crescendo" date="Summer, 2015 - Summer, 2016" />
-      <Bucket playful="true" to="/tumbleweed" title="Tumbleweed" date="Fall, 2013" />
+      <Bucket
+        to="/crescendo"
+        title="Crescendo"
+        date="Summer, 2015 - Summer, 2016"
+      />
+      <Bucket
+        playful="true"
+        to="/tumbleweed"
+        title="Tumbleweed"
+        date="Fall, 2013"
+      />
       <Bucket to="/knewton" title="Knewton GMAT" date="Winter, 2010" />
-      <Bucket playful="true" to="/lisztomania" title="Lisztomania" date="May, 2009" />
+      <Bucket
+        playful="true"
+        to="/lisztomania"
+        title="Lisztomania"
+        date="May, 2009"
+      />
     </div>
   </div>
-))
+));
