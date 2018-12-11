@@ -20,6 +20,7 @@
     "react-ga": "^2.5.0",
     "react-router": "^4.2.0",
     "react-static": "^5.8.1",
+    "react-tweet-embed": "^1.1.1",
     "react-youtube": "^7.6.0",
     "styled-components": "^3"
   },
