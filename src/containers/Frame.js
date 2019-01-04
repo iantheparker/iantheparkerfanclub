@@ -29,6 +29,9 @@ export default () => (
         <a className="subtitle" href={links.blog} title="Go to site">
           <FontAwesomeIcon icon={faBookmark} />
         </a>
+        <br />
+        <span className="subtitle2">PyTorch</span>
+        <span className="subtitle2">FastAI</span>
       </p>
     </IntroTxt>
     <TweetEmbed />
