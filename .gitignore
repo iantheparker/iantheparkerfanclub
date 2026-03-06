@@ -1,20 +1,6 @@
-# dependencies
-/node_modules
-
-# testing
-/coverage
-
-# production
-/dist
-/tmp
-
-# misc
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*

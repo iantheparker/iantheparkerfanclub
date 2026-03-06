@@ -1,0 +1,9 @@
+<div class="video-wrapper">
+  <video
+    poster="{{ include.poster }}"
+    {% if include.autoplay %}autoplay loop muted playsinline{% endif %}>
+    <source src="{{ include.src }}">
+    Your browser does not support the video tag.
+  </video>
+  {% unless include.autoplay %}<button class="playpause" aria-label="Play">&#9654;&#65038;</button>{% endunless %}
+</div>
