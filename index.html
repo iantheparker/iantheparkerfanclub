@@ -22,15 +22,7 @@ layout: default
   <a class="project-tile {% if project.playful %}pink{% else %}blue{% endif %}" href="{{ site.baseurl }}{{ project.url }}">
     <p>
       {{ project.title }}
-      <span class="tile-meta">
-        <span class="tile-date">{{ project.date_label }}</span>
-        {% if project.tags.size > 0 %}
-        <span class="tile-tags">{{ project.tags | join: " · " }}</span>
-        {% endif %}
-        {% if project.medium.size > 0 %}
-        <span class="tile-medium">{{ project.medium | join: " · " }}</span>
-        {% endif %}
-      </span>
+      <span class="tile-meta">{{ project.date_label }}{% if project.tags.size > 0 %} · {{ project.tags | join: " · " }}{% endif %}{% if project.medium.size > 0 %} · {{ project.medium | join: " · " }}{% endif %}</span>
     </p>
   </a>
   {% endfor %}

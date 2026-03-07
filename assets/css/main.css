@@ -345,28 +345,9 @@ a.subtitle2:hover {
 
 .project-tile .tile-meta {
   opacity: 0.35;
-  display: block;
-}
-
-.project-tile .tile-date {
-  font-size: 1rem;
+  font-size: 0.75rem;
   display: block;
   font-weight: normal;
-}
-
-.project-tile .tile-tags {
-  font-size: 0.85rem;
-  display: block;
-  font-weight: normal;
-  margin-top: 0.3rem;
-}
-
-.project-tile .tile-medium {
-  font-size: 0.8rem;
-  display: block;
-  font-weight: normal;
-  font-style: italic;
-  margin-top: 0.15rem;
 }
 
 @media (min-width: 1024px) {
@@ -377,6 +358,7 @@ a.subtitle2:hover {
 
   .project-tile .tile-meta {
     opacity: 0;
+    font-size: 1rem;
   }
 
   .project-tile.blue:hover  { background-color: #c0d6ff; }
@@ -390,18 +372,6 @@ a.subtitle2:hover {
   .project-tile p {
     font-size: 3rem;
     padding: 3rem;
-  }
-
-  .project-tile .tile-date {
-    font-size: 1.2rem;
-  }
-
-  .project-tile .tile-tags {
-    font-size: 1rem;
-  }
-
-  .project-tile .tile-medium {
-    font-size: 0.9rem;
   }
 }
 
