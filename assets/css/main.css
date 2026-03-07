@@ -255,6 +255,12 @@ a.subtitle2:hover {
   display: block;
 }
 
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 69vw;
+  min-height: 400px;
+}
+
 .playpause {
   outline: none;
   cursor: pointer;
@@ -337,11 +343,30 @@ a.subtitle2:hover {
   font-size: 1.4rem;
 }
 
+.project-tile .tile-meta {
+  opacity: 0.35;
+  display: block;
+}
+
 .project-tile .tile-date {
-  opacity: 0;
   font-size: 1rem;
   display: block;
   font-weight: normal;
+}
+
+.project-tile .tile-tags {
+  font-size: 0.85rem;
+  display: block;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+
+.project-tile .tile-medium {
+  font-size: 0.8rem;
+  display: block;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0.15rem;
 }
 
 @media (min-width: 1024px) {
@@ -350,10 +375,14 @@ a.subtitle2:hover {
     background-color: transparent;
   }
 
+  .project-tile .tile-meta {
+    opacity: 0;
+  }
+
   .project-tile.blue:hover  { background-color: #c0d6ff; }
   .project-tile.pink:hover  { background-color: pink; }
 
-  .project-tile:hover .tile-date {
+  .project-tile:hover .tile-meta {
     opacity: 0.35;
     transition: opacity 0.7s ease;
   }
@@ -365,6 +394,14 @@ a.subtitle2:hover {
 
   .project-tile .tile-date {
     font-size: 1.2rem;
+  }
+
+  .project-tile .tile-tags {
+    font-size: 1rem;
+  }
+
+  .project-tile .tile-medium {
+    font-size: 0.9rem;
   }
 }
 

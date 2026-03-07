@@ -3,6 +3,10 @@ layout: project
 title: Whack-a-Kanji
 permalink: /whack-a-kanji/
 playful: true
+date_label: "May, 2018"
+order: 2
+tags: [Concept, Development]
+medium: [React, TensorFlow]
 ---
 
 <div class="intro-txt">
@@ -15,6 +19,12 @@ to get the site up in a night and had her questioning her Kanji skills by the mo
 <br>
 <a class="subtitle" href="https://github.com/iantheparker/whack-a-kanji" title="Source code"><i class="fab fa-github"></i></a>
 <a class="subtitle" href="https://whack-a-kanji.fun" title="Go to site"><i class="far fa-bookmark"></i></a>
+<br>
+<span class="subtitle">Concept</span>
+<span class="subtitle">Development</span>
+<br>
+<span class="subtitle2">React</span>
+<span class="subtitle2">TensorFlow</span>
 </p>
 </div>
 

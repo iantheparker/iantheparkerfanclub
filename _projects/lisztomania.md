@@ -4,6 +4,9 @@ title: Lisztomania
 permalink: /lisztomania/
 playful: true
 twitter_embed: true
+date_label: "May, 2009"
+order: 14
+tags: [Concept, Director, Editor]
 ---
 
 <div class="intro-txt">

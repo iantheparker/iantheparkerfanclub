@@ -2,6 +2,10 @@
 layout: project
 title: "Knewton GMAT: VOD"
 permalink: /knewton/
+date_label: "Winter, 2010"
+order: 11
+tags: [Key Stakeholder + Team Lead, Research, Prototyping, Content Production]
+medium: [JS, JWPlayer]
 ---
 
 <div class="intro-txt">

@@ -2,6 +2,10 @@
 layout: project
 title: Crescendo
 permalink: /crescendo/
+date_label: "Summer 2015 – Summer 2016"
+order: 4
+tags: [App Development, Backend Development]
+medium: [iOS, Android, Rails]
 ---
 
 <div class="intro-txt">

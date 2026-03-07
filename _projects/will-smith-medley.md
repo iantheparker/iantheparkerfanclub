@@ -3,6 +3,9 @@ layout: project
 title: Will Smith Medley
 permalink: /will-smith-medley/
 playful: true
+date_label: "September, 2009"
+order: 13
+tags: [Producer, Director, Editor]
 ---
 
 <div class="intro-txt">

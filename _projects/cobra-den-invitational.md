@@ -3,6 +3,9 @@ layout: project
 title: Cobra Den Invitational
 permalink: /cobra-den-invitational/
 playful: true
+date_label: "March, 2010"
+order: 12
+tags: [Producer, Shooter, Editor, Director]
 ---
 
 <div class="intro-txt">

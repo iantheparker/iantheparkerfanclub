@@ -3,6 +3,9 @@ layout: project
 title: Knewton Hack Day
 permalink: /knewton-hack-day/
 playful: true
+date_label: "April, 2011"
+order: 10
+tags: [Director, Producer]
 ---
 
 <div class="intro-txt">

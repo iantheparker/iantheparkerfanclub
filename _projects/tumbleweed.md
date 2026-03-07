@@ -3,6 +3,10 @@ layout: project
 title: Tumbleweed
 permalink: /tumbleweed/
 playful: true
+date_label: "Fall, 2013"
+order: 7
+tags: [Concept, Director, Editor, Frontend Development, Backend Development]
+medium: [iOS, Rails]
 ---
 
 <div class="intro-txt">

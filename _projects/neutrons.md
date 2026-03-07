@@ -3,6 +3,9 @@ layout: project
 title: Making Neutrons
 permalink: /neutrons/
 playful: true
+date_label: "December, 2011"
+order: 9
+tags: [Animator]
 ---
 
 <div class="intro-txt">

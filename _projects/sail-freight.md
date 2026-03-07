@@ -2,6 +2,9 @@
 layout: project
 title: Sail Freight
 permalink: /sail-freight/
+date_label: "January, 2014"
+order: 6
+tags: [Co-Producer]
 ---
 
 <div class="intro-txt">

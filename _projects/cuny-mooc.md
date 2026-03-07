@@ -2,6 +2,9 @@
 layout: project
 title: CUNY MOOC
 permalink: /cuny-mooc/
+date_label: "July, 2014"
+order: 5
+tags: [Development Lead]
 ---
 
 <div class="intro-txt">

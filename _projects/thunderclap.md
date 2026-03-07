@@ -2,6 +2,10 @@
 layout: project
 title: Thunderclap Amps
 permalink: /thunderclap/
+date_label: "Spring, 2017"
+order: 3
+tags: [Instigator, Research + Prototyping, Backend Development, Frontend Development]
+medium: [Rails, Postgres, Chartjs + d3]
 ---
 
 <div class="intro-txt">

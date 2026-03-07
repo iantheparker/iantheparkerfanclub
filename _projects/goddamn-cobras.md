@@ -3,6 +3,9 @@ layout: project
 title: Goddamn Cobras
 permalink: /goddamn-cobras/
 playful: true
+date_label: "May, 2009"
+order: 15
+tags: [Founder, Producer, Director]
 ---
 
 <div class="intro-txt">
@@ -18,7 +21,7 @@ of our trips – shot on an iPhone.
 </div>
 
 <div class="video-wrapper">
-  <iframe src="https://player.vimeo.com/video/21168319?color=07ad4f" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/21168319?color=07ad4f" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="text-block" markdown="1">
@@ -29,7 +32,7 @@ have gone toward building food markets in the community.
 </div>
 
 <div class="video-wrapper">
-  <iframe src="https://player.vimeo.com/video/7768443?color=07ad4f" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/7768443?color=07ad4f" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="text-block" markdown="1">
@@ -39,7 +42,7 @@ Some efforts have gone into making fun videos for some local non-profits like Gr
 </div>
 
 <div class="video-wrapper">
-  <iframe src="https://player.vimeo.com/video/37089737?color=07ad4f" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/37089737?color=07ad4f" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div class="text-block" markdown="1">

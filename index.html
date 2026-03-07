@@ -17,19 +17,21 @@ layout: default
 </div>
 
 <div class="projects-grid">
-  <a class="project-tile blue"  href="{{ site.baseurl }}/frame/">        <p>Frame.ai<span class="tile-date">Fall, 2018</span></p></a>
-  <a class="project-tile pink"  href="{{ site.baseurl }}/whack-a-kanji/"><p>Whack-a-Kanji<span class="tile-date">May, 2018</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/thunderclap/">  <p>Thunderclap Amps<span class="tile-date">Spring, 2017</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/crescendo/">    <p>Crescendo<span class="tile-date">Summer 2015 – Summer 2016</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/cuny-mooc/">    <p>CUNY MOOC<span class="tile-date">July, 2014</span></p></a>
-  <a class="project-tile pink"  href="{{ site.baseurl }}/sail-freight/">   <p>Sail Freight<span class="tile-date">January, 2014</span></p></a>
-  <a class="project-tile pink"  href="{{ site.baseurl }}/tumbleweed/">   <p>Tumbleweed<span class="tile-date">Fall, 2013</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/sugar-shack/">    <p>Sugar Shack<span class="tile-date">December, 2012</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/neutrons/">       <p>Making Neutrons<span class="tile-date">December, 2011</span></p></a>
-  <a class="project-tile pink"  href="{{ site.baseurl }}/knewton-hack-day/"><p>Knewton Hack Day<span class="tile-date">April, 2011</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/knewton/">      <p>Knewton GMAT<span class="tile-date">Winter, 2010</span></p></a>
-  <a class="project-tile pink"  href="{{ site.baseurl }}/cobra-den-invitational/"><p>Cobra Den Invitational<span class="tile-date">March, 2010</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/will-smith-medley/"><p>Will Smith Medley<span class="tile-date">September, 2009</span></p></a>
-  <a class="project-tile pink"  href="{{ site.baseurl }}/lisztomania/">      <p>Lisztomania<span class="tile-date">May, 2009</span></p></a>
-  <a class="project-tile blue"  href="{{ site.baseurl }}/goddamn-cobras/">  <p>Goddamn Cobras<span class="tile-date">May, 2009</span></p></a>
+  {% assign sorted_projects = site.projects | sort: "order" %}
+  {% for project in sorted_projects %}
+  <a class="project-tile {% if project.playful %}pink{% else %}blue{% endif %}" href="{{ site.baseurl }}{{ project.url }}">
+    <p>
+      {{ project.title }}
+      <span class="tile-meta">
+        <span class="tile-date">{{ project.date_label }}</span>
+        {% if project.tags.size > 0 %}
+        <span class="tile-tags">{{ project.tags | join: " · " }}</span>
+        {% endif %}
+        {% if project.medium.size > 0 %}
+        <span class="tile-medium">{{ project.medium | join: " · " }}</span>
+        {% endif %}
+      </span>
+    </p>
+  </a>
+  {% endfor %}
 </div>

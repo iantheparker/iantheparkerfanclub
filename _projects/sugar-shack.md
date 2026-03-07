@@ -3,6 +3,9 @@ layout: project
 title: Sugar Shack
 permalink: /sugar-shack/
 playful: true
+date_label: "December, 2012"
+order: 8
+tags: [Co-Director, Cinematographer]
 ---
 
 <div class="intro-txt">

@@ -3,6 +3,10 @@ layout: project
 title: Frame.ai
 permalink: /frame/
 twitter_embed: true
+date_label: "Fall, 2018"
+order: 1
+tags: [Research, Co-Author]
+medium: [PyTorch, FastAI]
 ---
 
 <div class="intro-txt">
@@ -14,6 +18,9 @@ about it with Jesse St. Charles at Frame.
 <br>
 <a class="subtitle" href="https://github.com/frame-technology/transfer-learning-fastai" title="Source code"><i class="fab fa-github"></i></a>
 <a class="subtitle" href="https://blog.frame.ai/learning-more-with-less-1e618a5aa160" title="Blog post"><i class="far fa-bookmark"></i></a>
+<br>
+<span class="subtitle">Research</span>
+<span class="subtitle">Co-Author</span>
 <br>
 <span class="subtitle2">PyTorch</span>
 <span class="subtitle2">FastAI</span>
