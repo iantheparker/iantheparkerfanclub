@@ -2,16 +2,17 @@
 layout: project
 title: Knewton Recruiting
 permalink: /knewton-recruiting/
-date_label: "2012"
+date_label: "2014"
 order: 16
-tags: [Director, Producer]
+tags: [Freelance, Director, Producer]
 playful: true
 ---
 
 <div class="intro-txt">
 <p>
-A recruiting video made for Knewton.
+A recruiting video made for Knewton as a freelance project.
 <br>
+<span class="subtitle">Freelance</span>
 <span class="subtitle">Director</span>
 <span class="subtitle">Producer</span>
 </p>
