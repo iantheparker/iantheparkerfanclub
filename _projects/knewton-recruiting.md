@@ -3,7 +3,7 @@ layout: project
 title: Knewton Recruiting
 permalink: /knewton-recruiting/
 date_label: "2014"
-order: 16
+order: 6
 tags: [Freelance, Director, Producer]
 playful: true
 ---
